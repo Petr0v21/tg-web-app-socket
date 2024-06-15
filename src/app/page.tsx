@@ -7,7 +7,11 @@ export default function Home() {
   const [isConnected, setIsConnected] = useState(false);
   const [transport, setTransport] = useState("N/A");
 
+  const [state, setState] = useState<string[]>([]);
+  const [users, setUsers] = useState<number>(0);
+
   useEffect(() => {
+    console.log(socket);
     if (socket.connected) {
       onConnect();
     }
@@ -18,6 +22,15 @@ export default function Home() {
 
       socket.io.engine.on("upgrade", (transport) => {
         setTransport(transport.name);
+      });
+
+      socket.on("updateActiveClients", (args) => {
+        console.log("updateActiveClients", args);
+        setUsers(args);
+      });
+      socket.on("receiveMessage", (args) => {
+        console.log("receiveMessage", args);
+        setState((prev) => [...prev, JSON.stringify(args)]);
       });
     }
 
@@ -32,6 +45,8 @@ export default function Home() {
     return () => {
       socket.off("connect", onConnect);
       socket.off("disconnect", onDisconnect);
+      socket.off("updateActiveClients");
+      socket.off("updateActiveClients");
     };
   }, []);
 
@@ -39,6 +54,19 @@ export default function Home() {
     <div>
       <p>Status: {isConnected ? "connected" : "disconnected"}</p>
       <p>Transport: {transport}</p>
+      <span>USERS: {users}</span>
+      <div>
+        {state.map((item, idx) => (
+          <span key={item + idx}>{item}</span>
+        ))}
+      </div>
+      <button
+        onClick={() => {
+          socket.emit("sendMessage", "test message button" + socket.id);
+        }}
+      >
+        Button
+      </button>
     </div>
   );
 }
