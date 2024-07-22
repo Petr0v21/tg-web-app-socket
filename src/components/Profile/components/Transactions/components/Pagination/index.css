@@ -1,0 +1,52 @@
+.transaction-pagination {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 3em;
+}
+
+.transaction-pagination-index-page {
+  cursor: pointer;
+}
+
+.current-index-page {
+  color: white;
+}
+
+.nav-button {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.nav-button::before {
+  content: "";
+  background-image: url("../../../../../../../public/DisabledArrow.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 12px;
+  height: 16px;
+}
+
+.nav-button-active::before {
+  content: "";
+  background-image: url("../../../../../../../public/ActiveArrow.svg");
+}
+
+.left-side::before {
+  transform: rotate(90deg);
+}
+
+.right-side::before {
+  transform: rotate(270deg);
+}

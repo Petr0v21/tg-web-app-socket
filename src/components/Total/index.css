@@ -1,0 +1,18 @@
+.total {
+  display: flex;
+  gap: 2em;
+  color: var(--secondary-text-color);
+  font-size: var(--primary-font-size);
+  width: 40%;
+}
+
+.total-content {
+  display: flex;
+  gap: 0.5em;
+}
+
+.total-house-amount {
+  font-weight: 600;
+  color: rgba(163, 215, 97, 1);
+  position: relative;
+}

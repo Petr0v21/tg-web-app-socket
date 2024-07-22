@@ -1,0 +1,43 @@
+.level-bar-container {
+  width: 324px;
+}
+
+.level-bar {
+  width: 100%;
+  height: 12px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2px;
+}
+
+.level-bar-fill {
+  border-radius: 24px;
+  height: 100%;
+  background: rgba(239, 194, 80, 1);
+}
+
+.level-bar-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5em;
+  font-weight: 600;
+}
+
+.level-number {
+  color: rgba(239, 194, 80, 1);
+}
+
+.level-exp-details {
+  display: flex;
+  gap: 4px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.level-exp-details-fill {
+  color: rgba(255, 255, 255);
+}

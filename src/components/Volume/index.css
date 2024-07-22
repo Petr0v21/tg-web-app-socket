@@ -1,0 +1,14 @@
+.volume {
+  padding: 1em 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+    87.86% 203.09% at 50% -36.88%,
+    rgba(255, 230, 166, 0.25) 0%,
+    rgba(153, 153, 153, 0) 100%
+  );
+  border-top: 1px solid #ffffff40;
+  border-radius: var(--primary-border-radius);
+  cursor: pointer;
+}

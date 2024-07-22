@@ -1,0 +1,152 @@
+.other-leaders {
+  width: 100%;
+}
+
+.other-leaders-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: var(--primary-back-gradient);
+  border-radius: 12px;
+  position: relative;
+  min-height: 440px;
+  width: 100%;
+  max-width: 1024px;
+  margin-top: 48px;
+  padding: 1em;
+  padding-top: 3em;
+  margin: auto;
+}
+
+.other-leaders-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: -48px;
+}
+
+.other-leaders-title span {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: var(--primary-font-size);
+  font-weight: 650;
+  letter-spacing: 0.6em;
+}
+
+.other-leaders-title strong {
+  text-transform: lowercase;
+  background: var(--title-color-gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Bokor;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 72px;
+  text-align: center;
+}
+
+.other-leaders-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25em;
+}
+
+.other-leaders-row {
+  width: 100%;
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  font-weight: 500;
+}
+
+.other-leaders-row-naming {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.other-leaders-row-content {
+  color: white;
+  background: var(--primary-back-gradient);
+  border-radius: 12px;
+}
+
+.other-leaders-row div {
+  width: 25%;
+  min-width: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.other-leaders-item-main {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.other-leaders-item-main span {
+  max-width: 124px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.other-leaders-item-main img {
+  border-radius: 50%;
+}
+
+.leaders-show-button {
+  margin: 2em 0 4em 0;
+  background: url("../../../../../public/frame/show-leader-board.png") no-repeat
+    center;
+  width: 100%;
+  height: 64px;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.leaders-show-button span {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.leaders-content {
+  height: 440px;
+}
+
+@media (max-width: 1024px) {
+  .leaders-show-button {
+    margin-bottom: 5em;
+  }
+
+  .other-leaders-row div {
+    width: 33%;
+  }
+
+  #other-leaders-last-flip {
+    display: none;
+  }
+}
+
+@media (max-width: 674px) {
+  .other-leaders-row div {
+    width: 50%;
+  }
+
+  #other-leaders-net-gains {
+    display: none;
+  }
+}

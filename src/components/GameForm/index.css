@@ -1,0 +1,128 @@
+.game-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 425px;
+  gap: 1em;
+}
+
+.game-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.game-form-button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background: url("../../../public/frame/game-button.png") no-repeat center;
+  background-size: contain;
+  width: 342px;
+  height: 64px;
+  cursor: pointer;
+  margin-top: 1em;
+  border: 0;
+  border-radius: 36px;
+}
+.game-form-button span {
+  color: rgba(35, 35, 35, 1);
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.game-form-button-flipping {
+  background: url("../../../public/frame/disabled-button.png") no-repeat center;
+  background-size: contain;
+  height: 72px;
+}
+
+.game-form-button-flipping span {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.button-gold {
+  background: linear-gradient(
+    100.93deg,
+    rgba(255, 206, 111, 0.25) 5.21%,
+    rgba(255, 233, 177, 0.25) 48.63%,
+    rgba(255, 199, 86, 0.25) 63.46%,
+    rgba(255, 209, 91, 0.25) 217.01%
+  );
+  backdrop-filter: blur(10px);
+}
+
+.button-gold span {
+  color: rgba(255, 214, 129, 1);
+}
+
+.button-silver {
+  background: rgba(119, 119, 119, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.button-silver span {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.game-form-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.game-form-result h4 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0.5em 0;
+  text-transform: uppercase;
+  height: 80px;
+}
+
+.game-form-result-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.game-form-result-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.game-form-result-part-label {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.game-form-result-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  padding: 0.75em 2em;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  width: calc(342px / 2 - 0.5em);
+}
+
+.game-form-result-container span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.gold {
+  color: rgba(255, 214, 129, 1);
+}
+
+.silver {
+  color: silver;
+}

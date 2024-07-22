@@ -1,0 +1,102 @@
+.select {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  position: relative;
+}
+
+.select-container {
+  background: radial-gradient(
+    87.86% 203.09% at 50% -36.88%,
+    rgba(255, 230, 166, 0.25) 0%,
+    rgba(153, 153, 153, 0) 100%
+  );
+  border: 1px solid transparent;
+  border-bottom: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 24px;
+}
+
+.select-container-with-open-dropdown {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 0;
+}
+
+.select-dropdown {
+  width: 360px;
+  position: absolute;
+  z-index: 10;
+  top: calc(1.5em + 24px + 1px);
+  background: radial-gradient(
+    87.86% 203.09% at 50% -86.88%,
+    rgb(51 47 36) 0%,
+    rgba(21, 18, 14, 1) 100%
+  );
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 0;
+}
+
+.dropdown-open {
+  display: block;
+}
+
+.dropdown-hide {
+  display: none;
+}
+
+.select-item {
+  padding: 0.75em 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.select-input {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5em;
+}
+
+.select-input-value {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.select-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.select-icon::before {
+  content: "";
+  background-image: url("../../../../../public/DisabledArrow.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 12px;
+  height: 16px;
+}
+
+.select-icon-active {
+  transform: rotate(180deg);
+}
+
+.select-icon-active::before {
+  content: "";
+  background-image: url("../../../../../public/ActiveArrow.svg");
+}

@@ -1,0 +1,48 @@
+.copy-field {
+  width: 360px;
+  padding: 0.5em 1em;
+  background: radial-gradient(
+    87.86% 203.09% at 50% -36.88%,
+    rgba(255, 230, 166, 0.25) 0%,
+    rgba(153, 153, 153, 0) 100%
+  );
+  border: 1px solid transparent;
+  border-bottom: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copy-field-value {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  max-width: 285px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.copy-field-button {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.copy-field-button::after {
+  content: "";
+  background-image: url("../../../../../public/CopyIcon.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 14px;
+  height: 14px;
+}

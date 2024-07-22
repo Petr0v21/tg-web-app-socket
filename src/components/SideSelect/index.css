@@ -1,0 +1,64 @@
+.side-swicth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+}
+
+.side-swicth {
+  width: 100%;
+  height: 56px;
+  background: radial-gradient(
+    50% 194.79% at 50% -57.46%,
+    #6c6c6c 0%,
+    #383838 100%
+  );
+  box-shadow: 0px 1px 0px 2px rgba(255, 255, 255, 0.15) inset;
+  box-shadow: 0px -1px 0px 2px rgba(41, 41, 41, 1) inset;
+  box-shadow: 0px 2px 0px 0px rgba(35, 35, 35, 1);
+  border-radius: 48px;
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.side-swicth-element {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 48px;
+}
+
+.side-swicth-element-choosed-heads {
+  background: linear-gradient(
+    100.93deg,
+    #ffce6f 5.21%,
+    #ffe9b1 48.63%,
+    #ffc756 63.46%,
+    #ffd15b 217.01%
+  );
+  box-shadow: 0px -2px 0px 0px rgba(156, 91, 18, 1) inset;
+  color: rgba(61, 48, 28, 1);
+}
+
+.side-swicth-element-choosed-tails {
+  background: radial-gradient(
+    50% 194.79% at 50% -57.46%,
+    #a7a7a7 0%,
+    #494949 100%
+  );
+  border: 2px solid rgba(219, 219, 219, 1);
+  box-shadow: 0px 2px 0px 0px rgba(97, 97, 97, 1);
+  color: white;
+}
+
+.side-swicth-element-choosed {
+  cursor: default;
+}

@@ -1,0 +1,57 @@
+.user-header-content {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  color: white;
+  font-weight: 600;
+  font-size: var(--primary-font-size);
+  position: relative;
+}
+
+.user-header-balance {
+  background: radial-gradient(
+    87.86% 203.09% at 50% -36.88%,
+    rgba(255, 230, 166, 0.25) 0%,
+    rgba(153, 153, 153, 0) 100%
+  );
+  border-radius: var(--primary-border-radius);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  cursor: pointer;
+}
+
+.user-header-balance-content {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.user-header-balance-amount {
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+}
+
+.balace-add {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+}
+
+.balace-add span {
+  height: 22px;
+  font-weight: 600;
+}
+
+.user-header-avatar {
+  border-radius: 50%;
+  cursor: pointer;
+}

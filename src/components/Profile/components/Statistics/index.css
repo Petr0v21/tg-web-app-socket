@@ -1,0 +1,42 @@
+.profile-statistics-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.profile-statistics-item {
+  position: relative;
+  height: 158px;
+  width: 158px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  margin-top: 20px;
+}
+
+.profile-statistics-item-icon {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.profile-statistics-item-value {
+  font-size: 20px;
+  color: rgba(239, 194, 80, 1);
+}
+
+.profile-statistics-item-label {
+  color: white;
+  font-size: 16px;
+}
+
+.profile-statistics-item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: 78px;
+  font-weight: 600;
+}

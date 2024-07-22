@@ -1,0 +1,40 @@
+.ratio {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  color: var(--secondary-text-color);
+  font-size: var(--primary-font-size);
+  font-weight: 600;
+  width: 40%;
+  justify-content: flex-end;
+}
+
+.ratio-mobile {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 1em;
+  gap: 0.5em;
+}
+
+.ratio-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.ratio-container-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ratio-percent {
+  font-size: 12px;
+}
+
+@media (max-width: 1024px) {
+  .ratio-mobile {
+    display: flex;
+  }
+}

@@ -1,0 +1,99 @@
+.leaders-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6em;
+  width: 100%;
+  padding: 1em;
+  background-image: url("../../../public/background/LeadersBackground.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.leader-board-container {
+  margin-top: 2em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leader-board-title {
+  background: var(--title-color-gradient);
+
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Bokor;
+  font-size: 72px;
+  line-height: 72px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.leader-board-subtitle {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 650;
+}
+
+.leaders-date-range {
+  font-size: 14px;
+  font-weight: 900;
+  font-family: "Golos Text";
+  padding: 1em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.leaders-date-range span {
+  color: rgba(255, 255, 255);
+}
+
+.leader-column-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.leader-board-list {
+  margin-top: 4em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "second first third";
+  gap: 2em;
+}
+
+.grid-area-1 {
+  grid-area: first;
+}
+
+.grid-area-2 {
+  grid-area: second;
+}
+
+.grid-area-3 {
+  grid-area: third;
+}
+
+.leader-second-row {
+  margin-top: 8em;
+}
+
+@media (max-width: 1024px) {
+  .leaders-container {
+    background: none;
+  }
+
+  .leader-board-list {
+    grid-template-columns: auto;
+    grid-template-areas:
+      "first"
+      "second"
+      "third";
+    gap: 1em;
+  }
+
+  .leader-second-row {
+    margin-top: 0;
+  }
+}
